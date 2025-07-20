@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fac863;
+    padding: 5px 15px; /* ✅ 减小上下间距 */
+}
+
+/* Logo 图片 */
+.logo img {
+    height: 70px;  /* ✅ 调小 logo 图片高度 */
+    width: auto;
+    display: block;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 12px; /* ✅ 可以稍微缩小间距 */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 8px; /* ✅ 让按钮更紧凑 */
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ffe4a1;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    background: #ffcc66;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero-text .btn:hover {
+    background: #ffd98e;
+}
+
+/* News */
+.news {
+    background: #fff5e6;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #ffcc66;
+    max-width: 900px;
+}
+
+/* Gallery */
+.cat-gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-flex img {
+    width: 280px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-flex img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mission */
+.mission {
+    text-align: center;
+    background: #e8f5e9;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #444;
+    color: #fff;
+}
+
+.footer a {
+    color: #ffcc66;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
