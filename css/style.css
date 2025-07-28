@@ -19,12 +19,12 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #fac863;
-    padding: 5px 15px; /* ✅ 减小上下间距 */
+    padding: 5px 15px;  
 }
 
 /* Logo 图片 */
 .logo img {
-    height: 70px;  /* ✅ 调小 logo 图片高度 */
+    height: 90px;  
     width: auto;
     display: block;
 }
@@ -46,7 +46,8 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 6px 8px; /* ✅ 让按钮更紧凑 */
+    padding: 6px 8px; 
+    font-size: 18px;
     transition: background 0.3s;
 }
 
@@ -55,18 +56,24 @@ body {
     border-radius: 4px;
 }
 
+
 /* Hero Section */
 .hero {
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden;
+    height: 500px;
 }
 
-.hero img {
+.hero img,
+.cycle-slideshow img {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
-    filter: brightness(70%);
+ 
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero-text {
@@ -74,11 +81,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    color: #fff;
 }
 
 .hero-text h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .hero-text .btn {
@@ -89,12 +99,27 @@ body {
     font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
+    margin-top: 10px;
 }
 
 .hero-text .btn:hover {
     background: #ffd98e;
 }
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+}
 
+.cycle-slideshow {
+    position: relative;
+    z-index: 1;
+}
+
+ 
 /* News */
 .news {
     background: #fff5e6;
