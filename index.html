@@ -29,14 +29,27 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/pexels-pixabay-45170.jpg" alt="Rescue Cat Feature">
-    <div class="hero-text">
-      <h1>Help Us Save Lives</h1>
-      <p>Join our mission to rescue, heal, and rehome cats in need.</p>
-      <a href="#" class="btn">Donate Now</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="overlay"></div>  <!-- ← 挪出来放在最前面 -->
+
+  <div class="cycle-slideshow"
+       data-cycle-fx="fade"
+       data-cycle-timeout="3000">
+    <img src="images/cat-hero0.jpg" alt="Cat 1">
+    <img src="images/cat-hero1.jpg" alt="Cat 2">
+    <img src="images/cat-hero2.jpg" alt="Cat 3">
+    <img src="images/cat-hero3.jpg" alt="Cat 4">
+    <img src="images/cat-hero4.jpg" alt="Cat 5">
+  </div>
+
+  <div class="hero-text">
+    <h1>Help Us Save Lives</h1>
+    <p>Join our mission to rescue, heal, and rehome cats in need.</p>
+    <p> </p>
+    <a href="#" class="btn">Donate Now</a>
+  </div>
+</section>
+
 
   <main>
     <!-- News Section -->
@@ -70,6 +83,7 @@
     <a href="#">Instagram</a> |
     <a href="#">Twitter</a>
   </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
 </body>
 </html>
